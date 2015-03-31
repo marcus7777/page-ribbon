@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<title>Ribbons - CSS</title>  
+<link rel="import" href="../polymer/polymer.html">
+
+<link href="./ribbons.css" rel="stylesheet" type="text/css" />
+<dom-module id="page-ribbon">
+
+  <template>
+    <div class="ribbon {{side}} {{color}}">
+      <a href="{{href}}" >
+        <content></content>
+      </a>
+    </div>
+  </template>
+
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'page-ribbon',
+    side: function() {
+      if (this.left) return 'left';
+      if (this.right) return 'right';
+    },
+    published: {
+      right: Boolean,
+      left: Boolean,
+      color: "blue",
+      href: ""
+    }
+  });
+</script>

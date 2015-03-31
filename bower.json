@@ -1,0 +1,24 @@
+{
+  "name": "page-ribbon",
+  "version": "0.0.1",
+  "homepage": "https://github.com/marcus7777/ribbons-css",
+  "description": "a Page Ribbon like \"fork me on github\"",
+  "main": "page-ribbon.html",
+  "authors": [
+    "Marcus Hitchins"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "..",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#0.8-preview",
+    "web-component-tester": "*",
+    "webcomponentsjs": "^0.6.0"
+  }
+}
